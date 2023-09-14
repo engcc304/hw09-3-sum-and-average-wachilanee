@@ -45,3 +45,31 @@
         Array2 = 7 -3 5 19 27 -16 13 -7
 
 */
+#include <stdio.h>
+int main() {
+    
+    int num[ 100 ], N = 0, i ;
+
+    for ( i = 0; i <= N; i++) {
+        printf( "Input value to Array1 [%d]:\n",i ) ;
+        scanf( "%d", &num[ i ] );
+        N++ ;
+        if ( num[ i ] == -1 ) break ;// end if loop
+    }// end for loop
+
+    printf( "Array1 =" ) ;
+    for ( i = 0; i < N - 1; i++) {
+        printf( " %d", num[ i ] ) ;
+    }// end for loop
+    printf( "\nArray2 =" ) ;
+    for ( i = 0; i < N - 1; i++) {
+        printf( " 0" ) ;
+    }// end for loop
+
+    printf( "\n--| Copy Data from Array1 to Array2\n" ) ;
+    printf( "Array2 =" ) ;
+    for ( i = 0; i < N - 1; i++) {
+        printf( " %d", num[ i ] ) ;
+    }// end for loop
+    return 0;
+}
